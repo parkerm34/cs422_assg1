@@ -1,0 +1,100 @@
+Below are the results of testing the threaded vs the sequential quicksort. You can find very easily that the
+threaded quicksort was much faster on most test cases. These test cases ran are a combination of my own test
+cases with the books given to us by Professor Homer. The books increase in size as the test cases increase
+in number. There is a testing suite that runs the tests given by a usage when you call the program testsuite
+Below is the output of sortSeq and sortThread. I was never able to get sortProcess fully working therefore
+there are not tests below for the process sorting.
+
+
+parkerm34@lectura:~/cs422/assg1$ testsuite 8 sortSeq
+TIME TO SORT: 0 seconds 5 microseconds
+
+----**** TEST CASE 1 DIFF RESULTS ****----
+
+++++++++ TEST CASE 1 PASSED! ++++++++
+TIME TO SORT: 0 seconds 29302 microseconds
+
+----**** TEST CASE 2 DIFF RESULTS ****----
+
+++++++++ TEST CASE 2 PASSED! ++++++++
+TIME TO SORT: 0 seconds 22 microseconds
+
+----**** TEST CASE 3 DIFF RESULTS ****----
+
+++++++++ TEST CASE 3 PASSED! ++++++++
+TIME TO SORT: 0 seconds 5 microseconds
+
+----**** TEST CASE 4 DIFF RESULTS ****----
+
+++++++++ TEST CASE 4 PASSED! ++++++++
+TIME TO SORT: 0 seconds 96007 microseconds
+
+----**** TEST CASE 5 DIFF RESULTS ****----
+
+++++++++ TEST CASE 5 PASSED! ++++++++
+TIME TO SORT: 0 seconds 48066 microseconds
+
+----**** TEST CASE 6 DIFF RESULTS ****----
+
+++++++++ TEST CASE 6 PASSED! ++++++++
+TIME TO SORT: 1 seconds -296442 microseconds
+
+----**** TEST CASE 7 DIFF RESULTS ****----
+
+++++++++ TEST CASE 7 PASSED! ++++++++
+TIME TO SORT: 72 seconds -561343 microseconds
+
+----**** TEST CASE 8 DIFF RESULTS ****----
+
+++++++++ TEST CASE 8 PASSED! ++++++++
+
+======== RESULTS ========
+	FAILED: 0
+	PASSED: 8
+
+parkerm34@lectura:~/cs422/assg1$ testsuite 8 sortThread
+TIME TO SORT: 0 seconds 593 microseconds
+
+----**** TEST CASE 1 DIFF RESULTS ****----
+
+++++++++ TEST CASE 1 PASSED! ++++++++
+TIME TO SORT: 1 seconds -986439 microseconds
+
+----**** TEST CASE 2 DIFF RESULTS ****----
+
+++++++++ TEST CASE 2 PASSED! ++++++++
+TIME TO SORT: 0 seconds 634 microseconds
+
+----**** TEST CASE 3 DIFF RESULTS ****----
+
+++++++++ TEST CASE 3 PASSED! ++++++++
+TIME TO SORT: 0 seconds 453 microseconds
+
+----**** TEST CASE 4 DIFF RESULTS ****----
+
+++++++++ TEST CASE 4 PASSED! ++++++++
+TIME TO SORT: 0 seconds 76835 microseconds
+
+----**** TEST CASE 5 DIFF RESULTS ****----
+
+++++++++ TEST CASE 5 PASSED! ++++++++
+TIME TO SORT: 0 seconds 35702 microseconds
+
+----**** TEST CASE 6 DIFF RESULTS ****----
+
+++++++++ TEST CASE 6 PASSED! ++++++++
+TIME TO SORT: 0 seconds 432839 microseconds
+
+----**** TEST CASE 7 DIFF RESULTS ****----
+
+++++++++ TEST CASE 7 PASSED! ++++++++
+TIME TO SORT: 32 seconds -589156 microseconds
+
+----**** TEST CASE 8 DIFF RESULTS ****----
+
+++++++++ TEST CASE 8 PASSED! ++++++++
+
+======== RESULTS ========
+	FAILED: 0
+	PASSED: 8
+
